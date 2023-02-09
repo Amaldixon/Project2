@@ -9,20 +9,19 @@ h1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    color: brown;
+    color: white;
 }
 
 button{
     background-color: white;
-    border-color: white;
-    color: brown;
+    border-color: black;
+    color: black;
     border-inline-color: white 10px;
     font-size: 0.9rem;
 }
 .container{  
     text-align: center;  
-    border: 7px;  
-    width: 700px;  
+    border: 7px;   
     height: 400px;  
     padding-top: 400px;  
     }  

@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link href="style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <title>Coin Flip</title>
+<html>
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-    <h1>Heads or Tails</h1>
-    <div class="container">
-        <button id="flipHeads" type="button" onclick="flip('heads');">Heads</button>
-         <button id="flipTails" type="button" onclick="flip('tails');">Tails</button>
-        <div id="result"></div>
-      </div>
-      
+  <h1>Rock Paper Scissors</h1>
+  <div class="game">
+    <div class="choices">
+      <button class="choice" onclick="playRound('rock')">Rock</button>
+      <button class="choice" onclick="playRound('paper')">Paper</button>
+      <button class="choice" onclick="playRound('scissors')">Scissors</button>
+    </div>
+    <div id="result"></div>
+    <div id="score">Player: 0 | Computer: 0</div>
+    <div id="rules">
+      <h3>Rules</h3>
+      <ul>
+        <li>Rock beats Scissors</li>
+        <li>Paper beats Rock</li>
+        <li>Scissors beats Paper</li>
+      </ul>
+    </div>
+  </div>
 
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
-
 </html>
